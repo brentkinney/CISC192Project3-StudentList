@@ -14,20 +14,22 @@ int main()
 	{
 		while (choice == 'y' || choice == 'Y')
 		{
-			//test stuff real quick
-			double weightInPounds;
-			//ask the user for their weight
-			cout << "What is your weight in pounds? ";
-			cin >> weightInPounds;
-			cout << "Your weight is " << weightInPounds << endl;
+			string studentList;
+			
+			//ask for the student name
+			cout << "What is the student Name? ";
+			cin >> studentList;
+			cout << "Name given is " << studentList << endl;
 
 			//see if the user wants to continue and continue if desired
-			cout << "Continue? (Y/N): ";
+			cout << "Would you like to add nother student? (Y/N): ";
 			cin >> choice;
 			cout << endl;
 		}
+
+
 		//see if the user wants to continue and continue if desired
-		cout << "Continue? (Y/N): ";
+		cout << "Would you like to create another list? (Y/N): ";
 		cin >> choice;
 		cout << endl;
 	}
