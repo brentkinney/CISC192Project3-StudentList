@@ -84,10 +84,19 @@ int main()
 					//ask for the student name
 					
 					cout << "What is the student Name? " << endl;
-					//cin.ignore();
-					cin.ignore(1000, '\n');
-					getline(cin, tempName);
-					cout << "Name given is " << tempName << endl;
+					if (numNames == 0)
+					{
+						cin.ignore();
+						getline(cin, tempName);
+						cout << "Name given is " << tempName << endl;
+					}
+					else
+					{
+						getline(cin, tempName);
+						cout << "Name given is " << tempName << endl;
+					}
+					
+					
 
 					//implement alphabetical checker
 					if (numNames == 0)
